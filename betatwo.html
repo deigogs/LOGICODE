@@ -1,0 +1,236 @@
+<html>
+    <head>
+        <title>DIFICULTAD</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="especialistasprincipal.css"/>
+         
+        <style>
+body{
+    background-color: #DEEFE7;                
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #33ffff;
+    overflow: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.medicene{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.medicine::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background:#159A9C;
+    clip-path: inset(47% 0 0 0);
+    z-index: -1;
+}
+
+.container2{
+    padding: 15px;
+    max-width: 1100px;
+    width: 100%;
+    overflow: hidden;
+    display:flex;
+    flex-direction: column;
+    
+}
+.container2 .main-card{
+    width: 200%;
+    display: flex;
+    transition: all 1s ease;
+    margin-bottom:880px;
+    
+}
+#two:checked ~ .main-card{
+    margin-left: -100%;
+}
+.main-card .cards{
+    width: calc(100% / 2 - 30px);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    flex-wrap: wrap;
+    
+}
+.main-card .cards .card{
+    padding: 30px;
+    border-radius: 24px;
+    transition: all 0.4s ease;
+    border: 7px solid #002333;
+    width: 295px;
+    height: 395px;
+    background: white;
+}
+.main-card .cards .card:hover{
+    transform: translateY(-15px);
+}
+.cards .card .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cards .card .content .img{
+    height: 230px;
+    width: 230px;
+    margin-bottom: 14px;
+    background: #002333;
+    padding: 1px;
+    border-radius:20%;
+}
+.card .content .img img{
+    height: 100%;
+    width: 100%;
+    border: 3px solid #ffff;
+    border-radius: 20%;
+    object-fit: cover;
+    border: 7px solid white;
+}
+.card .content .details .name{
+    font-size: 16px;
+    font-weight: 500;
+    color:#159A9C;
+}
+.card .content .details .especialidad{
+    font-size: 17px;
+    color: #159A9C;
+}
+.card .content .media a{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    margin: 0 6px;
+    text-align: center;
+    line-height: 40px;
+    padding: 5px;
+    border: 7px solid transparent;
+    background-color: #002333;
+    border-radius: 6px;
+    transition: all 0.4s ease;
+}
+.content .media a:hover{
+    border-color: #002333;
+    color: #002333;
+    background-color: white;
+}
+.container2 .button{
+    width: 100%;
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+.button label{
+    height: 15px;
+    width: 15px;
+    background: #002333;
+    margin: 0 4px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+    position: relative;
+    bottom: 13px;
+
+}
+.title-cards{
+    padding: 100px;
+    text-align: center;
+    color: #159A9C;
+    font-size: 30px;
+    font-family: algerian;
+}
+.button label.active{
+    width: 35px;
+}
+#one:checked ~ .button label.one{
+    width: 35px;
+}
+#two:checked ~ .button label.two{
+    width: 35px;
+}
+#two:checked ~ .button label.one{
+    width: 15px;
+}
+#one:checked ~ .button label.two{
+    width: 15px;
+}
+input[type="radio"]{
+    display: none;
+}
+        </style>
+       <div class="title-cards">
+        <h2>DIFICULTAD</h2>
+    </div>
+    </head>
+    
+    <body>
+    <div class="medicene" >
+             
+        <div class="container2">
+        <input type="radio" name="dot" id="one"/> 
+        <input type="radio" name="dot" id="two"/> 
+        <div class="main-card">
+            <div class="cards">
+                <div class="card">
+                    <div class="content">
+                        <div class="img">
+                            <img src="Easy.jpg" alt=""/>
+                        </div>
+                        <div class="details">
+                            <div class="name"></div>
+                            <div class="especialidad">NIVEL FACIL</div>
+                        </div>
+                        <div class="media">
+                            <a href="easiest.html">ACCESO</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="card">
+                    <div class="content">
+                        <div class="img">
+                            <img src="Hard.jpg" alt=""/>
+                        </div>
+                        <div class="details">
+                            <div class="name"></div>
+                            <div class="especialidad">NIVEL INTERMEDIO</div>
+                        </div>
+                        <div class="media">
+                            <a href="medium.html">ACCESO</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="card">
+                    <div class="content">
+                        <div class="img">
+                             <img src="Insane.jpg" alt=""/>
+                        </div>
+                        <div class="details">
+                            <div class="name"></div>
+                            <div class="especialidad">NIVEL DIFICIL</div>
+                        </div>
+                        <div class="media">
+                            <a href="harder.html">ACCESO</a>
+                        </div>
+                    </div>
+                </div>
+                 
+            </div>
+        
+        </div>
+    </div>
+    </div>
+        
+        
+   
+    </body>
+</html>
+

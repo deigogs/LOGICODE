@@ -1,0 +1,242 @@
+header {
+  background: #02253d;
+  grid-area: enca;
+}
+
+nav {
+  background: #02152b;
+  grid-area: nav;
+}
+
+#dos {
+  background: #153f59;
+  grid-area: dos;
+}
+
+footer {
+  background: #365b77;
+  grid-area: pie;
+}
+
+#sa {
+  color: white;
+}
+
+label {
+  color: white;
+}
+
+#titulos {
+  color: #ccffff;
+  font-family: britannic bold;
+  position: relative;
+  top: 25%;
+}
+
+#dev {
+  background-color: white;
+  margin: 20px 20px;
+  display: flex;
+  width: 97%;
+  height: 93%;
+}
+
+#devin {
+  position: relative;
+  left: 50%;
+  top: 40%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0; 
+  padding: 0; 
+  height: 100%; 
+}
+.principal {
+  display: grid;
+  grid-template-rows: 150px 610px 190px;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas:
+    "enca enca enca enca"
+    "dos dos dos nav"
+    "pie pie pie pie";
+  gap: 3px;
+  overflow: hidden;
+  height: 100%; 
+}
+
+
+#devin.tablero {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 50%;
+  height: 40%;
+  transform: translate(-50%, -50%);
+  justify-items: center;
+  align-items: center;
+}
+
+.casilla {
+  width: 100%;
+  height: 100%;
+  background: #eeeeee;
+  border: 2px solid #444;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.casilla:hover {
+  transform: scale(1.05);
+}
+
+.casilla.correcta {
+  background-color: #4caf50 !important;
+  color: white;
+}
+
+/* Espacio para la imagen sobre la pregunta */
+#imagen-pregunta {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#imagen-pregunta img {
+  width: 80%;
+  max-height: 150px;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 2px solid white;
+}
+
+/* Contenedor de preguntas */
+#pregunta-text {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  margin: 15px 0;
+  padding: 0 10px;
+}
+
+#opciones-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+}
+
+#opciones-container button {
+  width: 100%;
+  max-width: 250px;
+  margin: 5px 0;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #0f4c75;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#opciones-container button:hover {
+  background-color: #3282b8;
+}
+
+#mensaje-respuesta {
+  color: #fff;
+  font-weight: bold;
+  margin: 15px 0;
+  text-align: center;
+}
+
+#btn-continuar {
+  display: block;
+  margin: 10px auto;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#btn-continuar.hidden {
+  display: none;
+}
+
+#btn-continuar:hover {
+  background-color: #45a049;
+}
+
+#footer-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 50px;
+}
+
+#footer-buttons a,
+#footer-buttons button {
+  padding: 10px 20px;
+  background-color: #0f4c75;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 0 10px; /* Espacio entre los botones */
+}
+
+#footer-buttons a:hover,
+#footer-buttons button:hover {
+  background-color: #3282b8;
+}
+
+#mensaje-aviso {
+  display: none; /* Se oculta inicialmente */
+  background-color: #c0392b;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px auto;
+  border-radius: 6px;
+  width: 80%;
+}
+
+
+/* ==== ESTILO PARA MENSAJE DE BLOQUEO DE NIVEL ==== */
+#bloqueo-nivel {
+  display: none;
+  text-align: center;
+  color: white;
+  background-color: #c0392b;
+  padding: 12px;
+  margin-top: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+

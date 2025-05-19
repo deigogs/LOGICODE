@@ -1,0 +1,97 @@
+<html>
+   <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            header{
+                background: #02253d;
+                grid-area:enca;
+            }
+            nav{
+                background: #02152b;
+                grid-area:nav;
+            }
+            #uno{
+                background: #012e46;
+                grid-area:uno;
+            }
+            #dos{
+                background: #153f59;
+                grid-area: dos;
+            }
+            #tres{
+                background: brown;
+                grid-area:tres;
+            }
+            footer{
+                background: #365b77;
+                grid-area: pie;
+            }
+            #sa{
+                color: white;
+            }
+            label{
+                color: white;
+            }
+            #titulos{
+                color:#ccffff;
+                font-family: britannic bold;
+                text-shadow: 25px 10px 2px whitesmoke;
+            }
+            .principal{
+                display:grid;
+                grid-template-rows: 150px 450px 300px;
+                grid-template-columns: 25% 25% 25% 25%;
+                grid-template-areas:
+                    "enca enca enca enca"
+                    "uno dos dos nav"
+                    "pie pie pie nav";
+                gap:5px;
+            }
+            @media(max-width:900px){
+                .principal{
+                    display{
+                        display: grid;
+                        grid-template-rows: 100px 200px 600px 400px 100px;
+                        grid-template-columns: 50% 45%;
+                        grid-template-areas:
+                            "enca enca"
+                            "dos dos"
+                            "uno uno"
+                            "nav nav"
+                            "pie pie";
+                        gap: 13px
+                    }
+                }
+                header{
+                    background:#691d58;
+                }  
+
+            }
+            
+        </style>
+    </head>
+    <body class="principal">
+        <header>
+            <h1 align=center id="titulos">VIOLENCIA FAMILIAR</h1>
+        </header>
+        <nav>
+            <center><a id="sa" href="https://www.enmilocalfunciona.io/crear-un-carrusel-de-imagenes-solo-con-css/">Entrevista con Orientacion</a></center><br><br>
+            <center><a id="sa" href="https://www.enmilocalfunciona.io/crear-un-carrusel-de-imagenes-solo-con-css/">Entrevista con Profesores</a></center><br><br>
+            <center><label>Horarios</label><br>
+            <select id="opciones" name="opciones">
+            
+            <option value="1">Pre kinder</option>
+            <option value="2">Kinder</option>
+            <option value="3">Primaria</option>
+            <option value="4">Secundaria</option>
+                </select><br></center>
+        </nav>
+        <article id="uno">3</article>
+        <article id="dos">4</article>
+        <article id="tres">5</article>
+        <footer>6</footer>
+        <div></div>
+    </body>
+</html>

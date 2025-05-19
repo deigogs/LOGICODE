@@ -1,0 +1,85 @@
+<html>
+   <head>
+        <title>JUEGO PRINCIPAL</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            header{
+                background: #02253d;
+                grid-area:enca;
+            }
+            nav{
+                background: #02152b;
+                grid-area:nav;
+            }
+            #dos{
+                background: #153f59;
+                grid-area: dos;
+            }
+            #tres{
+                background: brown;
+                grid-area:tres;
+            }
+            footer{
+                background: #365b77;
+                grid-area: pie;
+            }
+            #sa{
+                color: white;
+            }
+            label{
+                color: white;
+            }
+            #titulos{
+                color:#ccffff;
+                font-family: britannic bold;
+                position: relative;
+                top: 25%;   
+            }
+            #dev{
+                background-color: white;
+                margin: 20px 20px;
+                display: flex;
+                width: 97%;
+                height: 93%;
+            }
+            .principal{
+                display:grid;
+                grid-template-rows: 150px 610px 190px;
+                grid-template-columns: 25% 25% 25% 25%;
+                grid-template-areas:
+                    "enca enca enca enca"
+                    "dos dos dos nav"
+                    "pie pie pie pie";
+                gap:3px;
+                overflow: hidden;
+            }
+            
+        </style>
+    </head>
+    <body class="principal">
+        <header>
+            <h1 align=center id="titulos">VAMOS A APRENDER</h1>
+        </header>
+        <nav>
+            <center><a id="sa" href="https://www.enmilocalfunciona.io/crear-un-carrusel-de-imagenes-solo-con-css/">Entrevista con Orientacion</a></center><br><br>
+            <center><a id="sa" href="https://www.enmilocalfunciona.io/crear-un-carrusel-de-imagenes-solo-con-css/">Entrevista con Profesores</a></center><br><br>
+            <center><label>Horarios</label><br>
+            <select id="opciones" name="opciones">
+            
+            <option value="1">Pre kinder</option>
+            <option value="2">Kinder</option>
+            <option value="3">Primaria</option>
+            <option value="4">Secundaria</option>
+                </select><br></center>
+        </nav>
+        <div id="dos">
+            <div id="dev">
+                <h3>leer</h3>
+            </div>
+        </div>
+        <article id="tres">5</article>
+        <footer>6</footer>
+        <div></div>
+    </body>
+</html>
