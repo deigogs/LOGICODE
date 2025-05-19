@@ -20,7 +20,7 @@ const preguntas = [
       respuesta: "c) 15"
     },
     {
-        imagen: "EJD3.png",
+        imagen: "EJD3.PNG",
       pregunta: "¿Cuál es el resultado de la siguiente operación lógica?",
       opciones: [
         "a) true",
@@ -30,7 +30,7 @@ const preguntas = [
       respuesta: "a) true"
     },
     {
-        imagen: "EJD4.png",
+        imagen: "EJD4.PNG",
       pregunta: "¿Qué imprimirá este código?",
       opciones: [
         "a) 01234",
@@ -40,7 +40,7 @@ const preguntas = [
       respuesta: "b) 012"
     },
     {
-        imagen: "EJD5.png",
+        imagen: "EJD5.PNG",
       pregunta: "¿Qué imprime este fragmento?",
       opciones: [
         "a) 123",
@@ -50,7 +50,7 @@ const preguntas = [
       respuesta: "a) 123"
     },
     {
-        imagen: "EJD6.png",
+        imagen: "EJD6.PNG",
       pregunta: "¿Cuál es el resultado final de total?",
       opciones: [
         "a) 9",
@@ -60,7 +60,7 @@ const preguntas = [
       respuesta: "a) 9"
     },
     {
-      imagen: "EJD7.png",
+      imagen: "EJD7.PNG",
       pregunta: "¿Qué muestra este código?",
       opciones: [
         "a) 1248",
@@ -70,7 +70,7 @@ const preguntas = [
       respuesta: "a) 1248"
     },
     {
-        imagen: "EJD8.png",
+        imagen: "EJD8.PNG",
       pregunta: "¿Cuál es el resultado del siguiente fragmento?",
       opciones: [
         "a) Verdadero",
@@ -80,7 +80,7 @@ const preguntas = [
       respuesta: "b) Falso"
     },
     {
-      imagen: "EJD9.png",
+      imagen: "EJD9.PNG",
       pregunta: "¿Qué imprime el siguiente código?",
       opciones: [
         "a) Par",
@@ -90,7 +90,7 @@ const preguntas = [
       respuesta: "c) Ninguno"
     },
     {
-        imagen: "EJD10.png",
+        imagen: "EJD10.PNG",
       pregunta: "¿Cuál es la salida de este código?",
       opciones: [
         "a) Imprime un triángulo rectángulo invertido",
