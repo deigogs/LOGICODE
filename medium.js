@@ -10,7 +10,7 @@ const preguntas = [
       respuesta: "Imprime 'Positivo' si x es mayor que 0"
     },
     {
-      imagen: "EJ2.png",
+      imagen: "EJ2.PNG",
       pregunta: "¿Cuál es la salida del siguiente código?",
       opciones: [
         "El valor final de x será 0",
@@ -59,7 +59,7 @@ const preguntas = [
       respuesta: "!"
     },
     {
-      imagen: "EJ7.png",
+      imagen: "EJ7.PNG",
       pregunta: "Si x = 3 y y = 7, ¿qué imprime esto?",
       opciones: [
         "Correcto",
@@ -69,7 +69,7 @@ const preguntas = [
       respuesta: "Correcto"
     },
     {
-      imagen: "EJ8.png",
+      imagen: "EJ8.PNG",
       pregunta: "¿Cuál es el valor final de x después de ejecutar el siguiente código?",
       opciones: [
         "x = 7",
@@ -79,7 +79,7 @@ const preguntas = [
       respuesta: "x = 7"
     },
     {
-      imagen: "EJ9.png",
+      imagen: "EJ9.PNG",
       pregunta: "¿Qué hace el siguiente código?",
       opciones: [
         "Imprime los números del 0 al 4",
